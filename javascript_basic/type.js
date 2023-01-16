@@ -22,10 +22,21 @@ let u2 = undefined;
 
 // Array type
 let a1 = [1, 2, 3, 4];
+
 console.log(a1);
 console.log(a1[0]);
 
 // Object type
-let obj = {a : "apple", b : "banana", c: "cherry"};
-console.log(obj);
-console.log(obj.a);
+let obj1 = {a : "apple", b : "banana", c: "cherry"};
+let obj2 = {
+  a : {a : "a-apple", b : "a-banana", c : "a-cherry"},
+  b : {a : "b-apple", b : "b-banana", c : "b-cherry"},
+  c : {a : "c-apple", b : "c-banana", c : "c-cherry"}
+};
+
+console.log(obj1);
+console.log(obj1.a);
+
+console.log(obj2);
+console.log(obj2.a);
+console.log(obj2.a.a);
